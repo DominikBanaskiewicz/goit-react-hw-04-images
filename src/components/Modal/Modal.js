@@ -10,6 +10,7 @@ export const Modal = ({ largeImageUrl, onClose }) => {
     return () => {
       window.removeEventListener('keydown', keyPress);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const keyPress = evt => {
