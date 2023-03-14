@@ -1,4 +1,5 @@
 import React from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import { Searchbar } from './Searchbar/Searchbar';
 import { fetchGalleryimages } from './Api/Api';
@@ -58,7 +59,6 @@ export const App = () => {
       }
     };
     fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onSubmit = async search => {

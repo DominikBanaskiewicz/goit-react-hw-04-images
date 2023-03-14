@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import PropTypes from 'prop-types';
 import React from 'react';
 import css from '../Modal/Modal.module.css';
@@ -10,7 +11,6 @@ export const Modal = ({ largeImageUrl, onClose }) => {
     return () => {
       window.removeEventListener('keydown', keyPress);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const keyPress = evt => {
